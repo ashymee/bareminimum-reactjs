@@ -75,11 +75,11 @@ pnpm preview
 └── vite.config.ts
 ```
 
-## Packages
+## Includes
 
-- Husky
-- Commit Lint
-- Release IT
-- Typescript
-- TailwindCSS
-- React Router v6
+- [Husky](https://github.com/typicode/husky)
+- [Commit Lint](https://github.com/conventional-changelog/commitlint)
+- [Release IT](https://github.com/release-it/release-it)
+- [Typescript](https://github.com/Microsoft/TypeScript)
+- [TailwindCSS](https://github.com/tailwindlabs/tailwindcss)
+- [React Router](https://github.com/remix-run/react-router)
