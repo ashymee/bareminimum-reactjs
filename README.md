@@ -2,6 +2,7 @@
 
 ## Structures
 
+```sh
 ┌── index.html
 ├── package.json
 ├── pnpm-lock.yaml
@@ -32,6 +33,7 @@
 ├── tsconfig.json
 ├── tsconfig.node.json
 └── vite.config.ts
+```
 
 ## Packages
 
