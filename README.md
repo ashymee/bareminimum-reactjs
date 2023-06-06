@@ -1,5 +1,45 @@
 # Bareminimum ReactJS App for Starter
 
+# How to use
+
+1. Clone this repo
+
+```sh
+git clone https://github.com/ashymee/bareminimum-reactjs
+```
+
+2. Go to `bareminimum-reactjs` folder
+
+```sh
+cd bareminimum-reactjs
+```
+
+3. Install packages
+
+```sh
+pnpm install
+```
+
+4. Run development app
+
+```sh
+pnpm dev
+```
+
+(optional)
+
+5. Build the app
+
+```sh
+pnpm build
+```
+
+6. Start production app
+
+```sh
+pnpm preview
+```
+
 ## Structures
 
 ```sh
