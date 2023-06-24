@@ -1,6 +1,6 @@
-import reactLogo from "@assets/react.svg";
+import reactLogo from "@/assets/react.svg";
+import Wrapper from "@/components/layout/Wrapper";
 import { useState } from "react";
-import Wrapper from "../layout/Wrapper";
 import viteLogo from "/vite.svg";
 
 export default function HomePage() {
