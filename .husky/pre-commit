@@ -1,10 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-if type pnpm &> /dev/null; then
-  pnpm lint-staged
-elif type yarn &> /dev/null; then
-  yarn lint-staged
-else
-  npm lint-staged
-fi
+npx lint-staged
