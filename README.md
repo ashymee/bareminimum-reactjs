@@ -2,6 +2,8 @@
 
 # How to use
 
+## I. Run app directly (without docker)
+
 1. Clone this repo
 
 ```sh
@@ -40,12 +42,43 @@ pnpm build
 pnpm preview
 ```
 
+## II. Run using docker / podman
+
+1. Build docker image
+
+```sh
+# using docker
+docker build -t [image_name]:[version]
+
+# using podman
+podman build -t [image_name]:[version]
+
+# example
+podman build -t rv_docker:latest
+```
+
+2. Run docker container
+
+```sh
+# using docker
+docker run -d --name [container_name] -p [port]:4173 [image_name]:[version]
+
+# using podman
+podman run -d --name [container_name] -p [port]:4173 [image_name]:[version]
+
+# example
+podman run -d --name rv_docker_container -p 3000:4173 rv_docker:latest
+```
+
+3. Go to browser, than access `http://localhost:3000`
+
 ## Structures
 
 ```sh
-┌── index.html
+┌── CHANGELOG.md
+├── Dockerfile
+├── index.html
 ├── package.json
-├── pnpm-lock.yaml
 ├── postcss.config.js
 ├── public
 │   └── vite.svg
@@ -61,8 +94,8 @@ pnpm preview
 │   │   ├── loaders
 │   │   │   └── PageLoader.tsx
 │   │   └── pages
-│   │   ├── AboutPage.tsx
-│   │   └── HomePage.tsx
+│   │       ├── AboutPage.tsx
+│   │       └── HomePage.tsx
 │   ├── main.tsx
 │   ├── router
 │   │   └── index.ts
