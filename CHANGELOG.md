@@ -1,5 +1,7 @@
 
 
+## [0.0.4](https://github.com/ashymee/bareminimum-reactjs/compare/0.0.3...0.0.4) (2023-07-08)
+
 ## [0.0.3](https://github.com/ashymee/bareminimum-reactjs/compare/0.0.2...0.0.3) (2023-07-08)
 
 
