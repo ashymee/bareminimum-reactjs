@@ -1,4 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpx --no --commitlint --edit 
+if type pnpm &> /dev/null; then
+  pnpx --no --commitlint --edit
+elif type yarn &> /dev/null; then
+  yarn dlx --no --commitlint --edit
+else
+  npx --no --commitlint --edit
+fi
