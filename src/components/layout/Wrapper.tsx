@@ -1,10 +1,6 @@
-import { ReactNode } from "react";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
-
-type WrapperProps = {
-  children: ReactNode;
-};
+import type { WrapperProps } from "@/index";
 
 export default function Wrapper({ children }: WrapperProps) {
   return (
