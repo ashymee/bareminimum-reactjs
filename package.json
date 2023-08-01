@@ -15,29 +15,29 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router": "^6.14.1",
-    "react-router-dom": "^6.14.1"
+    "react-router": "^6.15.0",
+    "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.6",
-    "@commitlint/config-conventional": "^17.6.6",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@release-it/conventional-changelog": "^5.1.1",
-    "@types/react": "^18.2.14",
-    "@types/react-dom": "^18.2.6",
-    "@typescript-eslint/eslint-plugin": "^5.61.0",
-    "@typescript-eslint/parser": "^5.61.0",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
-    "autoprefixer": "^10.4.14",
-    "eslint": "^8.44.0",
+    "autoprefixer": "^10.4.15",
+    "eslint": "^8.47.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.1",
+    "eslint-plugin-react-refresh": "^0.4.3",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.3",
-    "postcss": "^8.4.25",
-    "release-it": "^15.4.1",
-    "tailwindcss": "^3.3.2",
+    "lint-staged": "^13.3.0",
+    "postcss": "^8.4.28",
+    "release-it": "^15.11.0",
+    "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6",
-    "vite": "^4.4.2"
+    "vite": "^4.4.9"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
