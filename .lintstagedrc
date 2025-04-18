@@ -1,0 +1,3 @@
+{
+  "*.ts": ["bunx eslint --fix", "bunx prettier --write"]
+}

@@ -1,20 +1,26 @@
+import tailwindcss from "@tailwindcss/vite";
+import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 import react from "@vitejs/plugin-react-swc";
-import path from "path";
+import { resolve } from "node:path";
 import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    TanStackRouterVite({ autoCodeSplitting: true }),
+    react(),
+    tailwindcss()
+  ],
   server: {
     host: true,
-    port: 3000,
+    port: 2700,
     watch: {
-      usePolling: true,
-    },
+      usePolling: true
+    }
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
-    },
-  },
+      "@": resolve(__dirname, "./src")
+    }
+  }
 });

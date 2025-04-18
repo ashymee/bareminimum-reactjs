@@ -1,47 +1,57 @@
 {
-  "name": "bareminimum",
+  "name": "bareminimum-reactjs",
   "private": true,
-  "version": "0.0.4",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "husky": "husky",
-    "prepare": "husky install",
-    "tailwind": "tailwind"
+    "dev": "bunx --bun vite",
+    "build": "vite build && tsc",
+    "start": "vite preview",
+    "test": "vitest run",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router": "^6.15.0",
-    "react-router-dom": "^6.15.0"
+    "@radix-ui/react-slot": "^1.1.2",
+    "@tailwindcss/vite": "latest",
+    "@tanstack/react-router": "latest",
+    "@tanstack/react-router-devtools": "latest",
+    "@tanstack/router-plugin": "latest",
+    "class-variance-authority": "latest",
+    "clsx": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwind-merge": "latest",
+    "tailwindcss": "latest",
+    "tailwindcss-animate": "latest"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.7.1",
-    "@commitlint/config-conventional": "^17.7.0",
-    "@release-it/conventional-changelog": "^5.1.1",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
-    "@vitejs/plugin-react-swc": "^3.3.2",
-    "autoprefixer": "^10.4.15",
-    "eslint": "^8.47.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.3",
-    "husky": "^8.0.3",
-    "lint-staged": "^13.3.0",
-    "postcss": "^8.4.28",
-    "release-it": "^15.11.0",
-    "tailwindcss": "^3.3.3",
-    "typescript": "^5.1.6",
-    "vite": "^4.4.9"
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@release-it/conventional-changelog": "latest",
+    "@testing-library/dom": "latest",
+    "@testing-library/react": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/parser": "latest",
+    "@vitejs/plugin-react-swc": "latest",
+    "eslint": "latest",
+    "eslint-import-resolver-typescript": "^4.3.2",
+    "eslint-plugin-react-hooks": "latest",
+    "eslint-plugin-react-refresh": "latest",
+    "husky": "latest",
+    "jiti": "latest",
+    "jsdom": "latest",
+    "lint-staged": "latest",
+    "release-it": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "vitest": "latest",
+    "web-vitals": "latest"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "pnpm lint"
+      "bun lint"
     ]
   },
   "release-it": {
@@ -74,5 +84,17 @@
         }
       }
     }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "printWidth": 80,
+    "trailingComma": "none"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
