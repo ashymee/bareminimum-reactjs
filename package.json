@@ -7,7 +7,8 @@
     "build": "vite build && tsc",
     "start": "vite preview",
     "test": "vitest run",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "prepare": "husky"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",
@@ -37,6 +38,7 @@
     "@vitejs/plugin-react-swc": "latest",
     "eslint": "latest",
     "eslint-import-resolver-typescript": "^4.3.2",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "latest",
     "eslint-plugin-react-refresh": "latest",
     "husky": "latest",
@@ -51,7 +53,9 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "bun lint"
+      "eslint --fix",
+      "prettier --write",
+      "git add"
     ]
   },
   "release-it": {
