@@ -2,6 +2,10 @@
   "name": "bareminimum-reactjs",
   "private": true,
   "type": "module",
+  "author": {
+    "name": "Aswin Himawan",
+    "email": "ashymee@gmail.com"
+  },
   "scripts": {
     "dev": "bunx --bun vite",
     "build": "vite build && tsc",
