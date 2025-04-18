@@ -18,22 +18,58 @@
 
 - **ReactJS**: Library untuk membangun antarmuka pengguna yang dinamis.  
   A library for building dynamic user interfaces.  
-  동적인 사용자 인터페이스를 구축하기 위한 라이브러리.
+  동적인 사용자 인터페이스를 구축하기 위한 라이브러리.  
+  [ReactJS Documentation](https://reactjs.org/)
+
 - **TypeScript**: Menambahkan tipe statis untuk JavaScript agar lebih aman dan terstruktur.  
   Adds static typing to JavaScript for better safety and structure.  
-  JavaScript에 정적 타이핑을 추가하여 더 안전하고 구조적으로 만듭니다.
+  JavaScript에 정적 타이핑을 추가하여 더 안전하고 구조적으로 만듭니다.  
+  [TypeScript Documentation](https://www.typescriptlang.org/)
+
+- **TanStack Router**: Router modern untuk aplikasi React yang mendukung data-fetching, nested routing, dan fitur-fitur canggih lainnya.  
+  A modern router for React applications that supports data-fetching, nested routing, and other advanced features.  
+  React 애플리케이션을 위한 현대적인 라우터로, 데이터 가져오기, 중첩 라우팅 및 기타 고급 기능을 지원합니다.  
+  [TanStack Router Documentation](https://tanstack.com/router)
+
+- **Tailwind CSS**: Framework CSS utilitas pertama yang memungkinkan Anda membangun desain yang sepenuhnya custom tanpa harus keluar dari HTML Anda.  
+  A utility-first CSS framework that allows you to build fully custom designs without leaving your HTML.  
+  유틸리티 우선 CSS 프레임워크로, HTML을 벗어나지 않고 완전히 사용자 정의된 디자인을 구축할 수 있습니다.  
+  [Tailwind CSS Documentation](https://tailwindcss.com/)
+
+- **shadcn/ui**: Koleksi komponen UI yang dibangun di atas Tailwind CSS, dirancang untuk memberikan fleksibilitas dan kemudahan dalam membangun antarmuka pengguna yang modern.  
+  A collection of UI components built on top of Tailwind CSS, designed to provide flexibility and ease in building modern user interfaces.  
+  Tailwind CSS를 기반으로 구축된 UI 구성 요소 모음으로, 현대적인 사용자 인터페이스를 쉽게 구축할 수 있도록 설계되었습니다.  
+  [shadcn/ui Documentation](https://ui.shadcn.com/)
+
 - **ESLint**: Menjaga kualitas kode dengan linting otomatis.  
   Maintains code quality with automatic linting.  
-  자동 린팅으로 코드 품질을 유지합니다.
-- **Jest**: Framework untuk pengujian unit dan integrasi.  
+  자동 린팅으로 코드 품질을 유지합니다.  
+  [ESLint Documentation](https://eslint.org/)
+
+- **Vitest**: Framework untuk pengujian unit dan integrasi.  
   A framework for unit and integration testing.  
-  단위 및 통합 테스트를 위한 프레임워크.
+  단위 및 통합 테스트를 위한 프레임워크.  
+  [Vitest Documentation](https://vitest.dev/)
+
 - **Bun**: Runtime modern untuk JavaScript yang cepat dan ringan.  
   A modern runtime for JavaScript that is fast and lightweight.  
-  빠르고 가벼운 JavaScript의 현대적인 런타임.
-- **TSUP**: Bundler untuk TypeScript yang cepat dan sederhana.  
-  A fast and simple bundler for TypeScript.  
-  빠르고 간단한 TypeScript 번들러.
+  빠르고 가벼운 JavaScript의 현대적인 런타임.  
+  [Bun Documentation](https://bun.sh/)
+
+- **Husky**: Alat untuk mengelola Git hooks dengan mudah, memungkinkan Anda menjalankan skrip otomatis seperti linting atau pengujian sebelum commit atau push.  
+  A tool to manage Git hooks easily, allowing you to run automated scripts like linting or testing before committing or pushing.  
+  Git 훅을 쉽게 관리할 수 있는 도구로, 커밋이나 푸시 전에 린팅 또는 테스트와 같은 자동 스크립트를 실행할 수 있습니다.  
+  [Husky Documentation](https://typicode.github.io/husky/)
+
+- **Commitlint**: Memastikan pesan commit Anda sesuai dengan konvensi tertentu, membantu menjaga konsistensi dan keterbacaan dalam riwayat Git.  
+  Ensures your commit messages follow a specific convention, helping maintain consistency and readability in Git history.  
+  커밋 메시지가 특정 규칙을 따르도록 보장하여 Git 기록의 일관성과 가독성을 유지합니다.  
+  [Commitlint Documentation](https://commitlint.js.org/)
+
+- **Release It**: Alat otomatisasi untuk merilis proyek Anda, termasuk pembaruan versi, pembuatan tag Git, dan publikasi ke npm atau platform lain.  
+  An automation tool for releasing your project, including version updates, Git tagging, and publishing to npm or other platforms.  
+  프로젝트 릴리스를 자동화하는 도구로, 버전 업데이트, Git 태그 생성, npm 또는 기타 플랫폼에 게시를 포함합니다.  
+  [Release It Documentation](https://github.com/release-it/release-it)
 
 ---
 
@@ -105,7 +141,7 @@ bun install
 bun run dev
 ```
 
-4. Buka browser dan akses `http://localhost:3000`.
+4. Buka browser dan akses `http://localhost:2700`.
 
 ---
 
@@ -130,7 +166,7 @@ bun install
 bun run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:3000`.
+4. Open your browser and navigate to `http://localhost:2700`.
 
 ---
 
