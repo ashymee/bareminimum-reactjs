@@ -1,6 +1,3 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-bun test
-bunx eslint .
-bunx lint-staged
+bun test || exit 1
+bunx eslint . || exit 1
+bunx lint-staged || exit 1
